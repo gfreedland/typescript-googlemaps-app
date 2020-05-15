@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Select And Share Location</title>
-    <script src="dist/bundle.js"></script>
+    <script 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8gwpYo2tO2isLPlSxOp-_aaNgxwrQsYw"
+        async 
+        defer
+    ></script>
+    <script src="dist/bundle.js" defer></script>
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <div id="app"></div>
+    <div id="map">
+        <p>Please enter an address!</p>
+    </div>
+    <form>
+        <input type="text" id="address">
+        <button type="submit">SEARCH ADDRESS</button>
+    </form>
 </body>
 </html>
